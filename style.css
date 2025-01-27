@@ -38,13 +38,14 @@ section {
             box-shadow: 5px 6px 2px 0px #474946;
             border: 3px solid #A4B7AB;
             display: flex;
-            justify-content: flex-end;
-            align-items: flex-end;
             padding: 7px;
-            p {
+            input {
+                width: 45vh;
                 color: #434B41;
                 font-family: "Quantico", serif;
                 font-size: 35px;
+                background: none;
+                border: none;
             }
         }
     }
