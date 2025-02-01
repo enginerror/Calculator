@@ -38,7 +38,7 @@ section {
             box-shadow: 5px 6px 2px 0px #474946;
             border: 3px solid #A4B7AB;
             display: flex;
-            padding: 7px;
+            padding: 10px;
             input {
                 width: 45vh;
                 color: #434B41;
@@ -46,6 +46,10 @@ section {
                 font-size: 35px;
                 background: none;
                 border: none;
+                display: flex;
+            }
+            input:focus {
+                outline: none;
             }
         }
     }
