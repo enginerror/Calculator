@@ -3,10 +3,17 @@ let buttons = document.querySelectorAll('button');
 
 let string = "";
 let arr = Array.from(buttons);
+
 arr.forEach(button => {
     button.addEventListener('click', (e) => {
         if(e.target.innerHTML == '=') {
-            string = eval(string);
+            if(string.includes('%')) {
+                let parts = string.split("%");
+                string = (eval(parts[0]) * eval(parts[1]) / 100).toString();
+            }
+            else {
+                string = eval(string.replace(/x/g, '*'));
+            }
             input.value = string;
         }
         else if(e.target.innerHTML === 'AC') {

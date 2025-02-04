@@ -40,13 +40,14 @@ section {
             display: flex;
             padding: 10px;
             input {
-                width: 45vh;
+                width: 44vh;
                 color: #434B41;
                 font-family: "Quantico", serif;
                 font-size: 35px;
                 background: none;
                 border: none;
                 display: flex;
+                text-align: right;
             }
             input:focus {
                 outline: none;
